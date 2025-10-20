@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Activity Reminder</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Activity Reminder</h1>
+    </header>
+    <main>
+      <input type="text" placeholder="Reminder name" id="reminderName" />
+      <input
+        type="number"
+        min="0.1"
+        placeholder="Reminder interval (minutes)"
+        id="reminderInterval"
+      />
+      <button id="addReminder">Add Reminder</button>
+      <ul id="reminderList"></ul>
+    </main>
+    <footer>
+      <p>
+        <a href="https://github.com/jaketzu">github.com/jaketzu</a>
+      </p>
+    </footer>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
