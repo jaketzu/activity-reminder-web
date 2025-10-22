@@ -4,27 +4,56 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Activity Reminder</title>
+    <link
+      rel="shortcut icon"
+      href="./images/corner-right-up-double-white.svg"
+      type="image/x-icon"
+    />
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
     <header>
+      <img
+        src="./images/corner-right-up-double.svg"
+        width="64"
+        height="64"
+        alt="logo"
+      />
       <h1>Activity Reminder</h1>
     </header>
     <main>
-      <input type="text" placeholder="Reminder name" id="reminderName" />
-      <input
-        type="number"
-        min="0.1"
-        placeholder="Reminder interval (minutes)"
-        id="reminderInterval"
-      />
-      <button id="addReminder">Add Reminder</button>
-      <ul id="reminderList"></ul>
+      <div id="container">
+        <h2>Add reminder</h2>
+        <div id="inputs">
+          <div id="textInputs">
+            <input type="text" placeholder="Name" id="reminderName" />
+            <input
+              type="number"
+              min="1"
+              step="1"
+              placeholder="Interval (minutes)"
+              id="reminderInterval"
+            />
+          </div>
+          <input
+            type="image"
+            src="./images/square-rounded-plus.svg"
+            alt="Add reminder button"
+            id="addReminder"
+          />
+        </div>
+        <h2>Reminders</h2>
+        <div id="reminderList"></div>
+      </div>
     </main>
     <footer>
-      <p>
-        <a href="https://github.com/jaketzu">github.com/jaketzu</a>
-      </p>
+      <div id="githubLink">
+        <img src="./images/brand-github.svg" alt="Github logo" />
+        <a href="https://github.com/jaketzu"> github.com/jaketzu </a>
+      </div>
+      <a href="https://www.fontspace.com/signwood-font-f108855"
+        >Font used: Signwood</a
+      >
     </footer>
     <script type="module" src="./src/main.js"></script>
   </body>
