@@ -3,6 +3,18 @@
   font-family: Signwood;
 }
 
+@media (min-width: 768px) {
+  body {
+    max-width: 80vw;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    max-width: 30vw;
+  }
+}
+
 :root {
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -13,8 +25,7 @@
 body {
   margin: 0 auto 0 auto;
   width: 100%;
-  max-width: 80ch;
-  min-height: 100vh;
+  min-height: 45vh;
   line-height: 1.5;
   font-family: Signwood;
 }
