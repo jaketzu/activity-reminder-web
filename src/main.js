@@ -30,8 +30,8 @@ document.getElementById("addReminder").addEventListener("click", () => {
       header.textContent = `${reminderName}: ${reminderInterval} minutes`;
 
       const deleteButton = document.createElement("input");
-      deleteButton.type = "image";
-      deleteButton.src = "../images/trash.svg";
+      deleteButton.type = "button";
+      deleteButton.textContent = "Remove";
 
       div.appendChild(header);
       div.appendChild(deleteButton);
